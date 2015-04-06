@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-1.11.2.js"></script>
+        <script src="js/scripts.js"></script>
+        <title>Queen Attack Determinator</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Queen attack Determinator</h1>
+
+            <form id="queen-attack">
+                <div class="form-group">
+                    <p><label for="x1">Enter your queen's starting X coordinate</label></p>
+                        <input id="x1" type="number" maxlength="1" required>
+                    <p><label for="y1">Enter queen's starting Y coordinate</label></p>
+                        <input id="y1" type="number" maxlength="1" required>
+                    <p><label for="x2">Enter queen's proposed X coordinate</label></p>
+                        <input id="x2" type="number" maxlength="1" required>
+                    <p><label for="y2">Enter queen's proposed Y coordinate</label></p>
+                        <input id="y2" type ="number" maxlength="1" required>
+                </div>
+                <button type="submit" class="btn">Find out!</button>
+            </form>
+
+            <div id="result">
+                <p>The queen can <span class="not"></span> attack!</p>
+            </div>
+        </div>
+    </body>
+</html>
